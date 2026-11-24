@@ -1,0 +1,14 @@
+{
+  "name": "amplerlauncher",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "prepare:mc": "node scripts/prepare-mc.mjs",
+    "prepare:mc:dry": "node scripts/prepare-mc.mjs --dry-run"
+  },
+  "devDependencies": {
+    "wrangler": "^4.45.0"
+  }
+}

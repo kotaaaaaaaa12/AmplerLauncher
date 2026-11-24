@@ -1,0 +1,19 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "amplerlauncher",
+  "main": "src/worker.js",
+  "compatibility_date": "2026-01-01",
+  "build": {
+    "command": "node scripts/prepare-mc.mjs"
+  },
+  "assets": {
+    "directory": ".",
+    "binding": "ASSETS"
+  },
+  "r2_buckets": [
+    {
+      "binding": "MC_BUCKET",
+      "bucket_name": "amplerlauncher-mc"
+    }
+  ]
+}
